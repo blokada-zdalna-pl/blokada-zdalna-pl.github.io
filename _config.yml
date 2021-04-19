@@ -1,0 +1,13 @@
+# Site settings
+lang: en
+
+title: Blokada Zdalna
+
+author:
+  name:  Blokada Zdalna
+  url:   https://github.com/blokada-zdalna-pl
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
