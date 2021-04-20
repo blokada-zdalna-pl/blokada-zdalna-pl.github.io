@@ -10,11 +10,17 @@ incremental: true
 layouts_dir         : _layouts
 includes_dir        : _includes
 
-title: Blokada Zdalna
+title: "Blokada zdalna"
 
 author:
-  name:  Blokada Zdalna
+  name:  "Blokada zdalna"
   url:   https://github.com/blokada-zdalna-pl
+  
+seo:
+  type: "Organization"
+  links:
+    - https://blokadazdalna.pl/
+    - https://github.com/blokada-zdalna-pl/
 
 defaults:
   -   scope:
@@ -22,6 +28,15 @@ defaults:
         type: "pages"
       values:
         layout:  "single"
+
+  -   scope:
+        path: "./_pages/pl/"
+        type: "pages"
+      values:
+        layout:   "single"
+        lang:     "pl-PL"
+        locale:   "pl-PL"
+        language: "pl"
 
 exclude:
   - ".github/"
