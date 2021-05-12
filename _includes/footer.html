@@ -3,7 +3,7 @@
     <ul class="site-footer-links right">
     {% for link in site.data.navigation.footer %}
       {% if link.title and link.url %}
-        <li><a href="{{ link.url }}" title="{{ link.title }}" rel="nofollow noopener noreferrer">{{ link.title }}</a></li>
+        <li><a href="{{ link.url }}" title="{{ link.title }}" target="_blank" rel="noopener">{{ link.title }}</a></li>
       {% endif %}
     {% endfor %}
     </ul>
