@@ -1,0 +1,16 @@
+<footer class="page-footer">
+  {% if site.footer.links %}
+    <ul class="site-footer-links right">
+    {% for link in site.footer.links %}
+      {% if link.title and link.url %}
+        <li><a href="{{ link.url }}" title="{{ link.title }}" rel="nofollow noopener noreferrer">{{ link.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+  {% endif %}
+  
+  <div class="site-footer-copyright">
+    Copyright &copy; {{ 'now'|date: '%Y' }}
+    <a href="/" title="{{ site.name | default: site.title }}">{{ site.name | default: site.title }}</a>.
+  </div>
+</footer>
