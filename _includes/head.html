@@ -1,0 +1,10 @@
+<meta charset="{{ site.encoding|default:'UTF-8' }}">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<meta name="Last-Modified" content="{{ site.time|date:'%a, %d %b %Y %H:%m:%S GMT%z' }}">
+{% seo %}
+<link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+<link rel="sitemap" type="application/xml" title="{{ site.title }} Mapa strony XML" href="/sitemap.xml">
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }} Kanał RSS" href="/feed.xml">
