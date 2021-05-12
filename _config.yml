@@ -1,8 +1,8 @@
 # Site settings
 encoding: "utf-8"
 timezone: Europe/Warsaw
-lang: "en-GB"
-locale: "en-GB"
+lang: "pl-PL"
+locale: "pl-PL"
 languages: ["en", "pl"]
 cookie_lang: "hl"
 incremental: true
