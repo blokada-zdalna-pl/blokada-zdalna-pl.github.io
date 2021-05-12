@@ -1,7 +1,7 @@
 <footer class="page-footer">
-  {% if site.footer.links %}
+  {% if site.data.navigation.footer %}
     <ul class="site-footer-links right">
-    {% for link in site.footer.links %}
+    {% for link in site.data.navigation.footer %}
       {% if link.title and link.url %}
         <li><a href="{{ link.url }}" title="{{ link.title }}" rel="nofollow noopener noreferrer">{{ link.title }}</a></li>
       {% endif %}
