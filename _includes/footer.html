@@ -1,16 +1,17 @@
-<footer class="page-footer">
-  {% if site.data.navigation.footer %}
-    <ul class="site-footer-links right">
-    {% for link in site.data.navigation.footer %}
-      {% if link.title and link.url %}
-        <li><a href="{{ link.url }}" title="{{ link.title }}" target="_blank" rel="noopener">{{ link.title }}</a></li>
-      {% endif %}
-    {% endfor %}
-    </ul>
-  {% endif %}
-  
-  <div class="site-footer-copyright">
-    Copyright &copy; 2020-{{ 'now'|date: '%Y' }}
-    <a href="/" title="{{ site.name | default: site.title }}">{{ site.name | default: site.title }}</a>.
-  </div>
+<footer class="footer page-footer border-top border-gray-light">
+    <div class="site-footer-copyright text-center">
+        Copyright &copy; 2020-{{ 'now'|date: '%Y' }}
+        <a href="/" title="{{ site.name | default: site.title }}">{{ site.name | default: site.title }}</a>.
+    </div>
+    <div class="text-left">
+        {% if site.data.navigation.footer %}
+        <ul class="list-inline">
+            {% for link in site.data.navigation.footer %}
+            {% if link.title and link.url %}
+            <li><a href="{{ link.url }}" title="{{ link.title }}" target="_blank" rel="noopener">{{ link.title }}</a></li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
 </footer>
